@@ -1,13 +1,8 @@
-dogs = [];
-const d = document.querySelector(".dog");
-for (let i= 0; i<6; i++){
-  dog = prompt(`Name of dog ${i+1} : `)
-  dogs.push(dog)
+numbers = [];
+let n = parseInt(prompt("Enter number. (Enter 0 to stop): "));
+while (n!=0){
+numbers.push(n);
+n = parseInt(prompt("Enter number. (Enter 0 to stop): "));
 }
 
-dogs.sort()
-dogs.reverse()
-
-for(let a =0; a < dogs.length; a++){
-  d.innerHTML += `<li>${dogs[a]}</li>`;
-}
+console.log(numbers.reverse(numbers.sort((a,b) => a-b)));
