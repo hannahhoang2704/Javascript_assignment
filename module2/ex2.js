@@ -2,7 +2,7 @@ const nrParticipants = parseInt(prompt("How many participants?"));
 names = [];
 const result = document.querySelector ('.name');
 for (let i = 0; i < nrParticipants; i++ ){
-  name = prompt("Names: ")
+  name = prompt(`Name of participant ${i+1}: `)
   names.push(name)
 }
 names.sort();
