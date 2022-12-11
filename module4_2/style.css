@@ -1,0 +1,121 @@
+html {
+    font-family: 'Lora', serif;
+}
+
+body {
+    color: #9aa6a6;
+    text-align: center;
+
+}
+h1{
+    color: #1e386c;
+}
+form{
+    text-align: center;
+    margin-top: 2rem;
+}
+body dialog{
+    background: #81b096;
+}
+
+dialog nav #closeModel {
+    color: rgba(0, 0, 0, 0.92);
+    font-size: 2vw;
+    display: inline-flex;
+    float: right;
+    align-items: center;
+    cursor: pointer;
+}
+
+dialog nav #modalTitle {
+    display: inline-flex;
+}
+
+#shows {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: min(100% - 50px, 1200px);
+    margin-inline: auto;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+#shows .show {
+    position: relative;
+    border-radius: 10px;
+    width: 200px;
+    flex-grow: 1;
+    max-width: 250px;
+    padding: 10px;
+    background: #81b096;
+    color: #14213d;
+}
+
+#shows .show a{
+    margin-bottom: 10px;
+    font-size: large;
+    color: #03191a;
+    position: relative;
+    top: 3px;
+}
+
+#shows .show h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+    max-width: 200px;
+    text-align: center;
+}
+#shows .show .genre {
+    display: inline-flex;
+    font-weight: bold;
+    margin: auto;
+    padding: 0.05rem;
+}
+
+#shows .show .genres .genre:not(:last-child)::after{
+    content: "|";
+    margin-left: 1px;
+}
+#shows .show .summary {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+input#submit-btn {
+    border-radius: 4px;
+    background-color: #1e386c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 90px;
+    cursor: pointer;
+    margin: 2.5px;
+}
+
+#submit-btn:hover{
+    background-color: gold;
+    color:black;
+    border:solid 1px;
+}
+input#query {
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    margin: 2.5px;
+    color: #9aa6a6;
+    border: solid;
+    border-radius: 0.3rem;
+    transition: width 0.4s ease-in-out;
+}
+
+input#query:focus{
+    width: 200px;
+}

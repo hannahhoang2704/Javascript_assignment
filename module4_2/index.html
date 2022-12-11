@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <dialog>
+      <nav>
+        <h2 id="modalTitle"></h2>
+        <div id="closeModel">&#10005;</div>
+      </nav>
+      <iframe name="details" height="400" width="500" title="More details"></iframe>
+    </dialog>
+    <h1>Moogle</h1>
+    <form action="https://api.tvmaze.com/search/shows?">
+      <input id="query" name="q" type="text" placeholder="Search" autocomplete="off" spellcheck="false">
+      <input id="submit-btn" type="submit" value="Search">
+    </form>
+    <div id="shows">
+      <p>No results</p>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
